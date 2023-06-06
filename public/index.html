@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>bioage</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div id="message"></div>
+     <p>
+        Введите АДС: <br /> 
+        <input name="ads" id="ads" type="number" value = 120 />
+    </p>
+     <p>
+        Введите АДД: <br /> 
+        <input name="add" id="add" type="number" value = 90 />
+     </p>
+     <p>
+     	Введите АДП: <br /> 
+        <input name="adp" id="adp" type="number" value = 30  />
+     </p>
+     <p>
+     	Введите ЗДВдох: <br /> 
+        <input name="zdin" id="zdin" type="number" value = 51 />
+     </p>
+     <p>
+        Введите ЗДВыдох: <br /> 
+        <input name="zdout" id="zdout" type="number" value = 29 />
+     </p>
+     <p>
+     	Введите ЖЕЛ: <br /> 
+        <input name="zel" id="zel" type="number" value = 5000 />
+     </p>
+     <p>
+     	Введите Масса тела: <br /> 
+        <input name="weight" id="weight" type="number" value = 87 />
+     </p>
+     <p>
+        Введите Аккомодация: <br /> 
+        <input name="accom" id="accom" type="number" value=4 />
+     </p>
+     <p>
+     	Введите Острота слуха: <br /> 
+        <input name="hear" id="hear" type="number" value = 40 />
+     </p>
+     <p>
+     	Введите Стат.балансировка: <br /> 
+        <input name="balance" id="balance" type="number" value = 10 />
+     </p>
+    <button onclick="send()">Отправить</button>
+<script>
+    async function send(){
+ 
+        // получаем введеное в поле имя и возраст
+        const ads = document.getElementById("ads").value;
+        const add = document.getElementById("add").value;
+        const adp = document.getElementById("adp").value;
+        const zdin = document.getElementById("zdin").value;
+        const zdout = document.getElementById("zdout").value;
+        const zel = document.getElementById("zel").value;
+        const weight = document.getElementById("weight").value;
+        const accom = document.getElementById("accom").value;
+        const hear = document.getElementById("hear").value;
+        const balance = document.getElementById("balance").value;
+ 
+        // отправляем запрос
+        const response = await fetch("/hello", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({ 
+                    ads: ads,
+                    add: add,
+                    adp: adp,
+                    zdin: zdin,
+                    zdout: zdout,
+                    zel: zel,
+                    weight: weight,
+                    accom: accom,
+                    hear: hear,
+                    balance: balance
+                })
+            });
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById("message").textContent = data.message;
+            }
+            else
+                console.log(response);
+    }
+</script>
+</body>
+</html>
