@@ -1,0 +1,6 @@
+# ml
+numpy==1.24.1
+scikit-learn==1.2.2
+# web framework
+fastapi==0.92.0
+uvicorn==0.17.6
