@@ -20,5 +20,8 @@
 
 [feature_importance.pdf](https://github.com/OksanaLimanovskaya/Otus/files/12840521/feature_importance.pdf)
 
+[LimanovskayaSoavtors_2_23_1.pdf](https://github.com/OksanaLimanovskaya/Otus/files/12840523/LimanovskayaSoavtors_2_23_1.pdf)
+
+
 
 Поэтому далее нужно строить модели для мужчин и женщин отдельно. Причем для уменьшения ошибки модели и отделения ее от дельты биовозраста решено использовать только данные для амбулаторных пациентов как практически здоровых.В итоге для построения модели для мужчин использовалась бд в объеме 344 записи.
