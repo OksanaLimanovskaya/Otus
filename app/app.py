@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Form, Body
 from fastapi.responses import FileResponse
-from ml.ml import load_model
+from ml.ml import load_model_men, load_model_women
  
 app = FastAPI()
  
@@ -11,7 +11,13 @@ def root():
  
 @app.post("/hello")
 def hello(data = Body()):
-    model_predict = load_model(data["ads"], 
+    if data['sex'] == 'man':
+        model_predict = load_model_men(data["ads"], 
+    	data["add"], data["adp"], data["zdin"],
+    	data["zdout"], data["zel"], data["weight"],
+    	data["accom"], data["hear"], data["balance"])
+    else:
+    	model_predict = load_model_women(data["ads"], 
     	data["add"], data["adp"], data["zdin"],
     	data["zdout"], data["zel"], data["weight"],
     	data["accom"], data["hear"], data["balance"])
