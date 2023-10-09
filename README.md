@@ -57,6 +57,10 @@
 
 ## Итог
 Берем в работу модели Random Forest
+example of application working
+![Screenshot 2023-09-22 at 03-04-58 flat](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/72d67662-4cb7-4aa6-8755-47a0891793a4)
+
+
 
 
 
