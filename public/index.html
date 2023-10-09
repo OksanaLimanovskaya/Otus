@@ -5,7 +5,15 @@
     <meta charset="utf-8" />
 </head>
 <body>
-    <div id="message"></div>
+    
+    <p>
+        Who are you: <br /> 
+        <select name="select" id="select" required="required">
+        <option value="">Выберите значение</option>
+    	<option value="man">man</option>
+    	<option value="woman">woman</option>
+    	
+   </select>
      <p>
         Введите АДС: <br /> 
         <input name="ads" id="ads" type="number" value = 120 />
@@ -47,8 +55,11 @@
         <input name="balance" id="balance" type="number" value = 10 />
      </p>
     <button onclick="send()">Отправить</button>
+    
+    <div id="message"></div>
 <script>
     async function send(){
+        const sex = document.getElementById("select").value;
  
         // получаем введеное в поле имя и возраст
         const ads = document.getElementById("ads").value;
@@ -67,6 +78,7 @@
                 method: "POST",
                 headers: { "Accept": "application/json", "Content-Type": "application/json" },
                 body: JSON.stringify({ 
+                    sex: sex,
                     ads: ads,
                     add: add,
                     adp: adp,
