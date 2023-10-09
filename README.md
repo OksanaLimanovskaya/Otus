@@ -31,6 +31,6 @@
 ![age_men](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/e5a817d9-8a5c-4ef9-915d-be66295b716d)
 
 Для женщин
-![age_women](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/9e989fcf-ba40-47cb-b849-5a96368112fa)
+![age_women](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/b052cef6-761e-48d1-8f8e-286f48ae3f60)
 
 
