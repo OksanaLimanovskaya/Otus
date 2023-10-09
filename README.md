@@ -57,8 +57,9 @@
 
 ## Итог
 Берем в работу модели Random Forest. Пример работы приложения
+![Screenshot 2023-10-09 at 10-05-10 bioage](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/b532898b-423b-471d-911d-3a901a22e717)
 
-![Screenshot 2023-09-22 at 03-04-58 flat](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/72d67662-4cb7-4aa6-8755-47a0891793a4)
+
 
 
 
