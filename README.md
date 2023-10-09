@@ -28,5 +28,9 @@
 ## Визуальный анализ данных
 Начмемс распределения целевой фичи - возраста
 Для мужчин получилось
-![age_men](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/a5be3126-7ecd-4ca8-88e0-1dcb1f9b17d1)
+![age_men](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/e5a817d9-8a5c-4ef9-915d-be66295b716d)
+
+Для женщин
+![age_women](https://github.com/OksanaLimanovskaya/Otus/assets/135599630/9e989fcf-ba40-47cb-b849-5a96368112fa)
+
 
